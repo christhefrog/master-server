@@ -1,0 +1,3 @@
+[submodule "ping-pong"]
+    path = routes/ping-pong
+    url = https://github.com/christhefrog/ping-pong.git
