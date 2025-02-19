@@ -5,9 +5,11 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "npx tsc",
-    "start": "cd dist && node index.js",
-    "dev": "npx nodemon --ext ts -x node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm index.ts"
+    "build": "npx tsc --build --clean && npx tsc",
+    "serve": "cd dist && node index.js",
+    "dev": "npx nodemon --ext ts -x node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm index.ts",
+    "docker-build": "docker build -t christhefrog/master-server .",
+    "docker-run": "docker run -p 3000:3000 christhefrog/master-server"
   },
   "keywords": [],
   "author": "",
