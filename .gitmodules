@@ -1,3 +1,6 @@
 [submodule "routes/ping-pong"]
 	path = routes/ping-pong
 	url = https://github.com/christhefrog/ping-pong.git
+[submodule "routes/word-guesser-api"]
+	path = routes/word-guesser-api
+	url = https://github.com/christhefrog/word-guesser-api.git
