@@ -6,7 +6,7 @@ status_result = subprocess.run("git status ./routes --porcelain", shell=True, ch
 
 if status_result.stdout:
     subprocess.run("git add ./routes .gitmodules", shell=True, check=True)
-    subprocess.run("git commit -m \"Updated submodules\"", shell=True, check=True)
+    subprocess.run("git commit -m \"Update submodules\"", shell=True, check=True)
     #subprocess.run("git push", shell=True, check=True)
     print("Submodules update commited! ✅")
 else:
